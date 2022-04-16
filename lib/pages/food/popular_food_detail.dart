@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:food_delivery/utils/dimensions.dart';
 import 'package:food_delivery/widgets/app_column.dart';
 import 'package:food_delivery/widgets/app_icon.dart';
+import 'package:food_delivery/widgets/expandable_text_widget.dart';
 
 import '../../utils/colors.dart';
 import '../../widgets/big_text.dart';
@@ -65,9 +66,25 @@ class PopularFoodDetail extends StatelessWidget {
                   children: [
                     AppColumn(text: 'Zimbabwean Dish',),
                     SizedBox(height: Dimensions.height20,),
-                    BigText(text: "Introduce",)
+                    BigText(text: "Introduce",),
+                    SizedBox(height: Dimensions.height20,),
+                    Expanded(
+                      child: SingleChildScrollView(
+                        child: ExpandableTextWidget(text: "Chicken marinated in a spiced yoghurt is placed in a large pot, then then layered with fried onions("
+                            "cheeky easy sub below!), fresh coriander/cilantro, then par boiled with  a marinated chicken gizzards soup laced with chillies, chopped"
+                            "onions as well as a sash of white corn meal know as sadza"
+                            "cheeky easy sub below!), fresh coriander/cilantro, then par boiled with  a marinated chicken gizzards soup laced with chillies, chopped"
+                            "cheeky easy sub below!), fresh coriander/cilantro, then par boiled with  a marinated chicken gizzards soup laced with chillies, chopped"
+                            "cheeky easy sub below!), fresh coriander/cilantro, then par boiled with  a marinated chicken gizzards soup laced with chillies, chopped"
+                            "cheeky easy sub below!), fresh coriander/cilantro, then par boiled with  a marinated chicken gizzards soup laced with chillies, chopped"
+                            "cheeky easy sub below!), fresh coriander/cilantro, then par boiled with  a marinated chicken gizzards soup laced with chillies, chopped"
+                            "cheeky easy sub below!), fresh coriander/cilantro, then par boiled with  a marinated chicken gizzards soup laced with chillies, chopped"
+                        ),
+                      ),
+                    )
                   ],
                 ),
+
           )),
           //expandable widget
         ],
@@ -109,7 +126,8 @@ class PopularFoodDetail extends StatelessWidget {
                 borderRadius: BorderRadius.circular(Dimensions.radius20),
                 color: AppColors.mainColor
               ),
-            )
+            ),
+
           ],
         ),
       ),
